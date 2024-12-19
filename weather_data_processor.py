@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import logging
 from data_ingestion import read_from_web_CSV
-### START FUNCTION 
+
 
 class WeatherDataProcessor:
     def __init__(self, config_params, logging_level="INFO"): # Now we're passing in the confi_params dictionary already
@@ -74,5 +74,4 @@ class WeatherDataProcessor:
     def process(self):
         self.weather_station_mapping()  # Load and assign data to weather_df
         self.process_messages()  # Process messages to extract measurements
-        self.logger.info("Data processing completed.")
-### END FUNCTION
+       self.logger.info("Data processing completed.")
