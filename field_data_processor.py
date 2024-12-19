@@ -1,4 +1,4 @@
-### START FUNCTION
+
 import pandas as pd
 from data_ingestion import create_db_engine, query_data, read_from_web_CSV
 import logging
@@ -134,6 +134,3 @@ class FieldDataProcessor:
         self.apply_corrections()
         weather_station_df = self.weather_station_mapping()
         
-      
-        
-### END FUNCTION
